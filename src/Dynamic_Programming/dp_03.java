@@ -443,13 +443,3 @@
 //
 
 
-package Dynamic_Programming;
-import java.util.*;
-
-public class dp_03 {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-
-
-    }
-}

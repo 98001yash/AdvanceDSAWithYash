@@ -253,29 +253,40 @@
 
 // code for the method overloading
 //
-//package chauhan;
-//class calculator {
-//    public void add(int a){
-//        System.out.println("int argument");
-//    }
-//    public void add(float a){
-//        System.out.println("float  argument");
-//    }
-//    public void add(double a){
-//        System.out.println("double  argument");
-//    }
-//}
-//public class OOPs {
-//    public static void main(String[] args){
-//        calculator c  = new calculator();
-//       c.add(12,23);
-//       c.add(12.02f,32.02f);
-//     c.add(23.0,45.0);
-//        c.add('a');// char--> char, int
-//        c.add(19l);// length--->  long , float, double
-//        c.add(10.5);// double---> double
-//    }
-//}
+
+class calculator {
+    public void add(int a) {
+        System.out.println("int argument");
+    }
+    public void add(float a) {
+        System.out.println("float argument");
+    }
+    public void add(double a) {
+        System.out.println("double argument");
+    }
+    // Overloaded methods for two arguments
+    public void add(int a, int b) {
+        System.out.println("int, int arguments");
+    }
+    public void add(float a, float b) {
+        System.out.println("float, float arguments");
+    }
+    public void add(double a, double b) {
+        System.out.println("double, double arguments");
+    }
+}
+public class OOPs {
+    public static void main(String[] args) {
+        calculator c = new calculator();
+        c.add(12, 23);
+        c.add(12.02f, 32.02f);
+        c.add(23.0, 45.0);
+        c.add('a');
+        c.add(19L);
+        c.add(10.5);
+    }
+}
+
 //
 //
 //
