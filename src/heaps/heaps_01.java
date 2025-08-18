@@ -20,22 +20,22 @@
 
 
 //    we are creating the maxHeap and doing operations
-package heaps;
-import java.util.*;
-public class heaps_01 {
-    public static void main(String[] args){
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-        pq.add(1);
-        pq.add(2);
-        System.out.println(pq);
-        System.out.println(pq.peek());
-        pq.add(3);
-        pq.add(4);
-        System.out.println(pq);
-        pq.poll();
-        System.out.println(pq);
-    }
-}
+//package heaps;
+//import java.util.*;
+//public class heaps_01 {
+//    public static void main(String[] args){
+//                                                                                                                                                                                                                                                                                                                                                                                                                                                            PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+//        pq.add(1);
+//        pq.add(2);
+//        System.out.println(pq);
+//        System.out.println(pq.peek());
+//        pq.add(3);
+//        pq.add(4);
+//        System.out.println(pq);
+//        pq.poll();
+//        System.out.println(pq);
+//    }
+//}
 
 // Find the  kth smallest element in the given array
    // we are using the minheap
@@ -90,8 +90,7 @@ public class heaps_01 {
 //        int n = arr.length;
 //        int k = 2;
 //        PriorityQueue<Integer> pq = new PriorityQueue<>();
-//        for(int ele:arr){
-//            pq.add(ele);
+//        for(int ele: e);
 //            if(pq.size()>k) pq.remove();
 //        }
 //        System.out.println(pq.peek());
@@ -373,3 +372,42 @@ public class heaps_01 {
 //
 //    }
 //}
+
+package heaps;
+public class heaps_01 {
+    public static void main(String[] args) {
+        int a = 12;
+        int b = 10;
+        System.out.println("Bitwise Operations:");
+        System.out.println("a & b (AND): " + (a & b));
+        System.out.println("a | b (OR):  " + (a | b));
+        System.out.println("a ^ b (XOR): " + (a ^ b));
+        System.out.println("~a (NOT):    " + (~a));
+        int choice = 2;
+        System.out.println("\nElse-If Example:");
+        if (choice == 1) {
+            System.out.println("You selected Option 1");
+        } else if (choice == 2) {
+            System.out.println("You selected Option 2");
+        } else if (choice == 3) {
+            System.out.println("You selected Option 3");
+        } else {
+            System.out.println("Invalid selection");
+        }
+
+        System.out.println("\nSwitch Example:");
+        switch (choice) {
+            case 1:
+                System.out.println("You selected Option 1");
+                break;
+            case 2:
+                System.out.println("You selected Option 2");
+                break;
+            case 3:
+                System.out.println("You selected Option 3");
+                break;
+            default:
+                System.out.println("Invalid selection");
+        }
+    }
+}

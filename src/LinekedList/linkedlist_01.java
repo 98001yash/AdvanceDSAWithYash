@@ -85,111 +85,111 @@
 //
 //}
 
-package LinekedList;
-import java.util.*;
-class Node{
-    int data;
-    Node next;
-    Node prev;
-    Node(int data){
-        this.data = data;
-
-    }
-}
-public class linkedlist_01 {
-    class DLL {
-        Node head = null;
-        Node tail = null;
-        int size = 0;
-        void display(Node head){
-            Node temp = head;
-            while(temp != null){
-                System.out.println(temp.data+ "");
-                temp = temp.next;
-            }
-            System.out.println();
-        }
-        void insertAtTail(int val){
-            Node temp = new Node(val);
-            if(size==0) head = tail = temp;
-            else {
-                tail.next =  temp;
-                temp.prev = tail;  // extra line added in the doubly linkedlist
-                tail = temp;
-            }
-            size++;
-        }
-        void insertAtHead(int val){
-            Node temp = new Node(val);
-            if(size==0) head = tail = temp;
-            else {
-                temp.next = head;
-                head.prev =temp;
-                head = temp;
-            }
-            size++;
-        }
-
-        void insert(int idx, int val){
-        if (idx == 0) {
-            insertAtHead(val);
-            return;
-        }
-        if (idx == size) {
-            insertAtTail(val);
-            return;
-        }
-        if(idx<0 && idx> size){
-            throw new RuntimeException("Invalid index....");
-        }
-        Node temp = new  Node(val);
-        Node x = head;
-        for(int i=0;i<=idx-1;i++){
-            x = x.next;
-        }
-        Node y = x.next;
-        x.next = temp;
-        temp.prev = x;
-        y.prev = temp;
-        temp.next = y;
-        size++;
-        }
-
-        void deleteAtHead(){
-            if(head ==null) return;
-            else{
-                head = head.next;
-                head.prev = null;
-            }
-            size--;
-        }
-
-        void deleteAtTail(){
-            if(head==null) return;
-            else {
-                tail = tail.prev;
-                tail.next = null;
-            }
-            size--;
-        }
-
-        void delete( int idx){
-            if(head==null) return;
-            Node temp = head;
-            for(int i=0;i<=idx-1;i++){
-                temp = temp.next;
-            }
-            temp.next = temp.next.next;
-            temp = temp.next;
-            temp.prev = temp.prev.prev;
-            size--;
-        }
-    }
-
-    public static void main(String[] args){
-    }
-
-}
+//package LinekedList;
+//import java.util.*;
+//class Node{
+//    int data;
+//    Node next;
+//    Node prev;
+//    Node(int data){
+//        this.data = data;
+//
+//    }
+//}
+//public class linkedlist_01 {
+//    class DLL {
+//        Node head = null;
+//        Node tail = null;
+//        int size = 0;
+//        void display(Node head){
+//            Node temp = head;
+//            while(temp != null){
+//                System.out.println(temp.data+ "");
+//                temp = temp.next;
+//            }
+//            System.out.println();
+//        }
+//        void insertAtTail(int val){
+//            Node temp = new Node(val);
+//            if(size==0) head = tail = temp;
+//            else {
+//                tail.next =  temp;
+//                temp.prev = tail;  // extra line added in the doubly linkedlist
+//                tail = temp;
+//            }
+//            size++;
+//        }
+//        void insertAtHead(int val){
+//            Node temp = new Node(val);
+//            if(size==0) head = tail = temp;
+//            else {
+//                temp.next = head;
+//                head.prev =temp;
+//                head = temp;
+//            }
+//            size++;
+//        }
+//
+//        void insert(int idx, int val){
+//        if (idx == 0) {
+//            insertAtHead(val);
+//            return;
+//        }
+//        if (idx == size) {
+//            insertAtTail(val);
+//            return;
+//        }
+//        if(idx<0 && idx> size){
+//            throw new RuntimeException("Invalid index....");
+//        }
+//        Node temp = new  Node(val);
+//        Node x = head;
+//        for(int i=0;i<=idx-1;i++){
+//            x = x.next;
+//        }
+//        Node y = x.next;
+//        x.next = temp;
+//        temp.prev = x;
+//        y.prev = temp;
+//        temp.next = y;
+//        size++;
+//        }
+//
+//        void deleteAtHead(){
+//            if(head ==null) return;
+//            else{
+//                head = head.next;
+//                head.prev = null;
+//            }
+//            size--;
+//        }
+//
+//        void deleteAtTail(){
+//            if(head==null) return;
+//            else {
+//                tail = tail.prev;
+//                tail.next = null;
+//            }
+//            size--;
+//        }
+//
+//        void delete( int idx){
+//            if(head==null) return;
+//            Node temp = head;
+//            for(int i=0;i<=idx-1;i++){
+//                temp = temp.next;
+//            }
+//            temp.next = temp.next.next;
+//            temp = temp.next;
+//            temp.prev = temp.prev.prev;
+//            size--;
+//        }
+//    }
+//
+//    public static void main(String[] args){
+//    }
+//
+//}
 
 
 
@@ -459,6 +459,8 @@ public class linkedlist_01 {
 
 
 
+
+
 // to print the spiral of the matrix
 //package LinekedList;
 //import java.util.*;
@@ -505,3 +507,4 @@ public class linkedlist_01 {
 //        System.out.println();
 //    }
 //}
+

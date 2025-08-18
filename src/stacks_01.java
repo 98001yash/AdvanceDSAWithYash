@@ -18,6 +18,8 @@
 //}
 
 
+
+
 // to take the stack input from the users
 //package chauhan;
 //import java.util.Scanner;
@@ -96,8 +98,8 @@
 // array implementation of the stack
 
 
-//package chauhan;
-//
+
+
 //public class stacks_01 {
 //    public static class Stack {
 //        int[] arr = new int[5];
